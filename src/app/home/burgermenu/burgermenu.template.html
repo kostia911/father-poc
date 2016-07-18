@@ -1,0 +1,18 @@
+<div class="overlay overlay-menu">
+    <nav>
+        <ul>
+            <li><a href="http://poc-sculpture.com/" class="bg-blue">Домашняя</a></li>
+            <li><a [routerLink]="['/oeuvre']" class="bg-blue">Творчество</a></li>
+            <li><a href="http://poc-sculpture.com/me-contacter" class="bg-green">Пресса</a></li>
+            <li><a [routerLink]="['/about']" class="bg-green">Обо мне</a></li>
+             <li><a href="http://poc-sculpture.com/me-contacter" class="bg-green">Контакты</a></li>
+            <!--<li><a href="http://poc-sculpture.com/mon-travail" class="bg-orange">Заказать</a></li>-->
+        </ul>
+    </nav>
+</div>
+<div id="btn-menu" class="" (click)="toggleMenu($element)">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+    <span class="menu-text">Меню</span>
+</div>
