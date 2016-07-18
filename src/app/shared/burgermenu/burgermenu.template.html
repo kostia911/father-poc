@@ -1,8 +1,8 @@
 <div class="overlay overlay-menu">
     <nav>
         <ul>
-            <li><a href="http://poc-sculpture.com/" class="bg-blue">Домашняя</a></li>
-            <li><a [routerLink]="['/oeuvre']" class="bg-blue">Творчество</a></li>
+            <li><a [routerLink]="['']" (click)="toggleMenu()" class="bg-blue">Домашняя</a></li>
+            <li><a [routerLink]="['/oeuvre']" (click)="toggleMenu()" class="bg-blue">Творчество</a></li>
             <li><a href="http://poc-sculpture.com/me-contacter" class="bg-green">Пресса</a></li>
             <li><a [routerLink]="['/about']" class="bg-green">Обо мне</a></li>
              <li><a href="http://poc-sculpture.com/me-contacter" class="bg-green">Контакты</a></li>
@@ -10,7 +10,7 @@
         </ul>
     </nav>
 </div>
-<div id="btn-menu" class="" (click)="toggleMenu($element)">
+<div id="btn-menu" class="" (click)="toggleMenu()">
     <span class="top"></span>
     <span class="middle"></span>
     <span class="bottom"></span>
