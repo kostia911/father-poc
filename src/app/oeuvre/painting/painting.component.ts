@@ -8,8 +8,8 @@ import {ROUTER_DIRECTIVES} from "@angular/router"
   selector: 'painting', // using [ ] means selecting attributes
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
   directives: [ROUTER_DIRECTIVES],
-  templateUrl: './painting.template.html'
-   //styleUrls: [ './burgermenu.style.css' ]
+  templateUrl: './painting.template.html',
+   styleUrls: [ './../../home/home.style.css' ]
 })
 export class Painting {
     
