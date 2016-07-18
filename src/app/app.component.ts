@@ -4,6 +4,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { AppState } from './app.service';
+import {BurgerMenu} from './shared/burgermenu'
 
 /*
  * App Component
@@ -12,12 +13,15 @@ import { AppState } from './app.service';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
+  directives:[BurgerMenu],
+  
   styleUrls: [
-    './app.style.css'
+    './home/home.style.css'
   ],
   template: `
-
     <main>
+    <burgermenu></burgermenu>
+       
       <router-outlet></router-outlet>
     </main>
 

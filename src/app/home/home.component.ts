@@ -3,7 +3,7 @@ import {ROUTER_DIRECTIVES} from "@angular/router"
 
 import { AppState } from '../app.service';
 
-import { BurgerMenu } from './burgermenu';
+
 
 @Component({
   // The selector is what angular internally uses
@@ -17,7 +17,6 @@ import { BurgerMenu } from './burgermenu';
   // We need to tell Angular's compiler which directives are in our template.
   // Doing so will allow Angular to attach our behavior to an element
   directives: [
-    BurgerMenu,
     ROUTER_DIRECTIVES
   ],
   // We need to tell Angular's compiler which custom pipes are in our template.
